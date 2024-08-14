@@ -1,0 +1,26 @@
+Tasarım Kalıplarının Amacı :
+  Nesne-merkezli prensipleri kullanarak
+   1-Doğru sorumlulukları bulmak
+   2-Değişimi göz önüne alarak bu sorumlulukları nesnelere dağıtmak
+   3-Nesneleri , aralarında az bağımlılık oluştıracak şekilde kurgulamaktır.
+----------------------------------------------------------------------------------------------
+Tekrarlanan Problemler :
+  1-Nesneleri nasıl yaratırız ?
+  2-Karmaşık nesneleri nasıl yaratırız ?
+  3-Nesne ailelerini nasıl yaratırız ?
+  4-Bir sınıftan sadece bir ya da belirli sayıda nesne nasıl yaratırız ?
+  5-Nesnelere erişimi nasıl kontrol ederiz ?
+  6-Nesneler arasındaki bütün-parça ilişkisini nasıl tasarlarız ?
+
+  -Karmaşık nesneleri projelerde oluştururken soyutlayıp , zapt edemezsek kocaman bir çöplük oluşuyor.
+  -Herkesin gelişi güzel nesne oluşturmasını da engellemek gerekir.
+----------------------------------------------------------------------------------------------
+Bir Tasarım Kalıbının Yapısı :
+  Bir tasarım kalıbının temelde 4 bileşeni vardır.
+  1-İsmi ki o kalıbı, problemi ve çözümüyle birlikte ayırt etmemizi sağlar.
+  2-Problem ki hangi bağlamda nasıl ortaya çıktığını ifade eder.
+  3-Çözüm ki parçaları ve aralarındaki ilişkileri ifade eder.
+  4-Sonuçlar ki kazanılan ve kaybedilenleri ifade eder.
+----------------------------------------------------------------------------------------------
+
+

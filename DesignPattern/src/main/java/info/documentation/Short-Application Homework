@@ -1,0 +1,7 @@
+Örnek - 1:
+  Aşağıdaki problemi GoF'un Proxy(Vekil) tasarım kalıbı ile nasıl çözebiliriz ?
+  ** Demokrasilerde vatandaşların kendilerini yönetenlere ulaşma hakları vardır ,
+  ** Bakanında en tepe yönetici olarak vatandaşları dinleme zorunluluğu vardır ,
+  ** Ama Bakanın 75 milyon kişiyle görüşmesi hem imkansız hem de uygun değildir ,
+  ** Bu durumda vatandaşlar Bakanlar nasıl görüşebilir ?
+----------------------------------------------------------------------------------------------
