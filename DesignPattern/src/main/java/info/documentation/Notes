@@ -22,5 +22,38 @@ Bir Tasarım Kalıbının Yapısı :
   3-Çözüm ki parçaları ve aralarındaki ilişkileri ifade eder.
   4-Sonuçlar ki kazanılan ve kaybedilenleri ifade eder.
 ----------------------------------------------------------------------------------------------
+  No Silver Bullet - Yazılımın Asli 4 Özelliği Vardır der Kitapta F.Brooks
+    1-Karmaşıktır.
+    2-Çok Değişir
+    3-Yazılım Görülemez
+    4-Yazılım Uyumludur
 
+  Aslında , görülemez ve uyumlu olmasını , karmaşıklığının ve sık değişmesinin sebeplerinden olduğnu düşünebiliriz.
+  Bu durumda yazılımın en temel iki özelliği , Karmaşıklık ve Değişmedir diyebiliriz.
+----------------------------------------------------------------------------------------------
+  Robert E.Wood 1886 yılında yayınladığı bir Task Complexity : Definition of The Construct isimli makalesinde , bir işin teorik yapısında
+    3 parça olduğunu ifade eder :
+      1-İşin Ürettiği Çıktılar (products)
+      2-İş için gerekli işlemler ya da davranışlar (required acts)
+      3-İş için gerekli bilgi girdisi (information cues)
+----------------------------------------------------------------------------------------------
+    Bileşen Karmaşıklığı ( Component Complexity)
+  f(ayrık işlemleri karmaşıklığı , bilgi girdlerinin karmaşıklığı)
+
+    İlişkisel Karmaşıklık ( Coordinative Complexity )
+  f(işlemler arasındnaki ilişkilerin karmaşıklığı)
+
+  Yazılım karmaşıklığı = bizim için tek tek bileşenlerinin karmaşıklığı + bu bileşenlerin runtime anında nasıl bir ilişki kuracaklarının karmaşıklığı
+----------------------------------------------------------------------------------------------
+  Birliktelik ( Birleşik Karmaşıklığı)
+    Bileşenin alt parçalarının ne kadar "birlikte" (togetherness) olduğunun bir ölçüsüdür ve Cohesion olarak adlandırılır.
+    Birliktelik tek bir amaca odaklılıktır. (Single Responsibility)
+    Dolayısıyla , farklı işler farklı yerlerde yapılacak şekilde ayrılmalıdır.
+      Seperation of Concerns
+----------------------------------------------------------------------------------------------
+   Birliteliği yüksek bileşenlerin,
+    -Karmaşıklığı düşüktür (Çünkü aynı işi yapıyorlardır)
+    -bakım maliyetleri düşüktür.
+    -tekrar kullanıma daha yatkındırlar.
+----------------------------------------------------------------------------------------------
 
