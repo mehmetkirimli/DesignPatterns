@@ -45,7 +45,7 @@ Bir Tasarım Kalıbının Yapısı :
 
   Yazılım karmaşıklığı = bizim için tek tek bileşenlerinin karmaşıklığı + bu bileşenlerin runtime anında nasıl bir ilişki kuracaklarının karmaşıklığı
 ----------------------------------------------------------------------------------------------
-  Birliktelik ( Birleşik Karmaşıklığı)
+  Birliktelik ( Birleşik Karmaşıklığı) Kohezyon
     Bileşenin alt parçalarının ne kadar "birlikte" (togetherness) olduğunun bir ölçüsüdür ve Cohesion olarak adlandırılır.
     Birliktelik tek bir amaca odaklılıktır. (Single Responsibility)
     Dolayısıyla , farklı işler farklı yerlerde yapılacak şekilde ayrılmalıdır.
@@ -56,4 +56,56 @@ Bir Tasarım Kalıbının Yapısı :
     -bakım maliyetleri düşüktür.
     -tekrar kullanıma daha yatkındırlar.
 ----------------------------------------------------------------------------------------------
+    Birliktelik Tipleri
+      1-Coincidental ( Gelişigüzel )
+      2-Logical ( Naif Mantıksal )
+      3-Temporal ( Zamansal )
+      4-Procedural ( Prosedürel )
+      5-Communicational/Informational ( İletişimsel )
+      6-Sequential ( Ardışıl )
+      7-Functional ( Fonksiyonel )
+----------------------------------------------------------------------------------------------
+      Nesne Kategorizasyonu
+   Yazılım sistemlerinde farklı rollerde iş gören nesneler bulunur.
+   Nesneler , bazı rollere göre sınıflandırılanilir.
+   Dolayısıyla nesne rolleri , daha yüksek birlikteliğe sahip nesneler elde etmeye yardımcı olabilir.
+----------------------------------------------------------------------------------------------
+   Ivar Jacobsaon'ın sınıflandırması , 3 rolden oluşur
+    1-Boundary : Sistemin aktörleriyle olann iletişimini yöneten nesnelerdir , interface nesneleri de denir.
+    2-Control  : İş süreçlerini yöneten ve ilgili kuralları bilen nesnelerdir , çoğunlukla service olarak bilinirler.
+    3-Entity   : İş alano (business domain) nesnlerdir.
+    B-E-C modelidir
+----------------------------------------------------------------------------------------------
+    Model-View-Controller (MVC) Kalıbını , Jacobson'ın sınıflandırmasıyla ifade edersek :
+      Boıundary -> View
+      Entity -> Model
+      Control -> Controller
+----------------------------------------------------------------------------------------------
+   Bağımlılık - Coupling
+    Koordinasyon karmaşıklığı , bir işin kendi başına ifade edilebilirliğinin ya da diğerleriyke be kadar ilgili " relatedness " olduğunun ölçüsüdür.
+    İlgililik , bağımlılıktır (coupling) ve bağımlılığı düşük olan bileşenlerin karmaşıklığı da düşüktür.
+    Daha az malzeme ile yapılabilecek bir işi daha çoğu ile yapmayın ! Occam's Razor
+    Low-copling ya da loose/weak-coupling
+----------------------------------------------------------------------------------------------
+    Bağımlılık Tipleri
+  1-İçerik (Content) : Yapıların birbirlerinin iç yapılarına , gerçekleştirmelerine (implemantation) bağımlı olduğu durumdur.
+  2-Ortak (Common)   : Global veri ve değişkenleri kullanan yapılar arasındaki bağımlılıktır.
+  3-Dışsal(External) : Yapıları arasında , ortak kullandıkları dış bir bileşen yada sistemin format , arayüz,veri yapısı vb. dayatmasından kaynaklanan bağımlılıktır.
+  4-Mesaj (Message)  : Arayüzü (inteface) bilgisi dışında başka hiç bir bilgi gerektirmeyen bağımlılık şeklidir.
+    --Olması gereken en sağlıklı bağımlılıktır.
+    --Metotlar,sınıflar,modüller,katmanlar ve sistemler arasında uygulanabilir.
+    5-Miras Bağımlılığı (Inheritance Coupling) : Üst yapı ile ondan türetilen yapı arasındaki bağımlılıktır.
+    6-Soyut Bağımlılık (Abstract Coupling) : Soyut olan üst yapılara olan bağımlılıktır.
+      --Soyut bağımlılıkta , gerçekleştirme mirası ile arayüz mirası kullanılır.
+                            (impelementation inheritance) & (interface inheritance)
+----------------------------------------------------------------------------------------------
+Nesneler arasında bağımlılık arttıkça :
+    1-Aralarında daha fazla koordinasyon ihtiyacı doğar ,
+    2-Aralarında daha fazla veri akışı olur ,
+    3-Birbirlerindeki değişimlerden daha sık ve çok etkilenirler ve muhtemelene birlikte değişirler.
+    4-Yüksek bağımlılık , çığ gibi büyüyen değişim problemi ortaya çıkarır.
+
+
+
+
 
