@@ -104,6 +104,28 @@ Nesneler arasında bağımlılık arttıkça :
     2-Aralarında daha fazla veri akışı olur ,
     3-Birbirlerindeki değişimlerden daha sık ve çok etkilenirler ve muhtemelene birlikte değişirler.
     4-Yüksek bağımlılık , çığ gibi büyüyen değişim problemi ortaya çıkarır.
+----------------------------------------------------------------------------------------------
+    Birliktelik ve Bağımlılık
+ -İşleri yapan bileşenleri yükske birliktelikli (highly-cohesive) ve düşük bağımlılılı (lowly-coupled) olması için ,
+işlerin uygun bir şekikde ve seviyede , alt parçalara , atomik işlere bölünmese gerekir. Öyle ki , ortaya çıkan atomik işlerin ,
+  1-daha küçük alt parçalara bölünmesine gerek olmasın ,
+  2-tek bir amacı olsun , her biri tek bir işi yapsın ama tam yapsın ,
+  3-birbirleriyle ilişkileri en az seviyede olsun
+----------------------------------------------------------------------------------------------
+  .Yüksek birliktelikli ve düşük bağımlılıklı işler , rahat , anlaşılır , hızlı geliştirilir , kolay test edilir ve aktarılır.
+  .Dolayısıyla , her türlü yazılım birimi , bileşen , modül , paket , sınıf/arayüz , metot , blok ve hatta satır , yüksek birliktelikli ve düşük bağımlılıklı olmalıdır.
+----------------------------------------------------------------------------------------------
+    Veri ve Sorumluluk
+ 1-Veri tek başına ilişki kurmak konusunda işleri zorlaştırabilir. Bu sebeple veriyi anlamlı kılacak davranışlar gereklidir. Veriler davranış varlığındayken anlamlı olur
+    Bu sebeple bağlam olmadan anlam olmaz, bağlamı da davranış/sorumluluk sağlar.
+----------------------------------------------------------------------------------------------
+      Anemic Domain Model - 1
+ -Düşük kohezyon , yüksek bağımlılıklı nesnelere belki de en güzel örnek Martin.Fowler tarafından Kansız Alan Modeli (Aemic Domain Model) olarak adlandırılan ve
+    entity nesnelerinde görülen tipik bir durumdur.
+ -Anemic Domain Model , iş alanının temsil eden nesnelerin , iş alanıyla ilgili sadece veriyi taşıyıp , herhangi bir davranışa sahip olmadığı durumudur.
+    Dolayısıyla nesneler arasındaki bağımlılık , arayüzlerindeki davranışlar yerine , doğrudan erişerek ya da set/get metotlarıyla veri üzerindendir.
+----------------------------------------------------------------------------------------------
+    Tasarım Kalıpları ( Design Patterns)
 
 
 

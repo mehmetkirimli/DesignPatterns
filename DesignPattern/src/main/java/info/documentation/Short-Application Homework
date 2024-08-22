@@ -5,3 +5,19 @@
   ** Ama Bakanın 75 milyon kişiyle görüşmesi hem imkansız hem de uygun değildir ,
   ** Bu durumda vatandaşlar Bakanlar nasıl görüşebilir ?
 ----------------------------------------------------------------------------------------------
+Uygulama - 1:
+  -Şimdi , nesneye yaklaşımımızın , o nesnenin birlikteliğini ve onu kullanan nesnelerle arasında olan bağımlılığı nasıl belirlediğini bir örnek üzerinde görelim
+  -Nesneyi önce veri taşıyan bir yapı olarak ele alacağız daha sonra gittikçe onu daha sorumlu bir yapıya doğru evireceğiz.
+  -Ve bu evirme sürecinde nesneyi ve istemcisiyle arasındaki ilişkiyi gözlemleyeceğiz.
+
+    -Nesnemiz , ELEVATOR , asansörü temsil etmektedir.
+    -İstemcisi ise ElevatorTEST'tir.
+    -Bu iki nesnenin farklı hallerini farklı isimlerle gerçekleştireceğiz.
+
+    Efradına Camii , Ağyarına Mani :)
+
+  -Asansör veri sağladıkça sistem karmaşıklaştı , istemci zor test eder hale geldi , değişim zorlaştı.
+  -Asansör , davranış/sorumluluk sağladıkça , sistem basitleşti ve daha rahat değişebilir hale geldi.
+  -Aslolan veri sağlamak değil , davranış sağlamaktır..
+  -Çünkü davranış olmadan veri tek başına anlamdan yoksun kalıyor , veriyi anlamlı kılan bağlamdır , bağlam ise davranış tarafından belirlenir.
+----------------------------------------------------------------------------------------------
