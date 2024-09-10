@@ -126,6 +126,26 @@ işlerin uygun bir şekikde ve seviyede , alt parçalara , atomik işlere bölü
     Dolayısıyla nesneler arasındaki bağımlılık , arayüzlerindeki davranışlar yerine , doğrudan erişerek ya da set/get metotlarıyla veri üzerindendir.
 ----------------------------------------------------------------------------------------------
     Tasarım Kalıpları ( Design Patterns)
+  1-SOLID PRENSIPLERI
+    -SINGLE RESPONSIBILITY PRINCIPLE
+    -OPEN-CLOSED PRINCIPLE
+    -LISKOV SUBSTITUTION PRINCIPLE
+    -INTERFACE SEGREGATION PRINCIPLE
+    -DEPENDENCY INVERSION PRINCIPLE
+      -ek olarak - GRANULARITY PRINCIPLE
+----------------------------------------------------------------------------------------------
+    SRP : SINGLE RESPONSIBILITY PRINCIPLE : Bir sınıfın değişmesi için asla birden fazla sebep olmamalıdır.
+    OCP : OPEN CLOSED PRINCIPLE : Yazılım yapıları genişletilmeye açık ama değişime kapalı olmalı.
+    LSP : LISKOV SUBSTITUTION PRINCIPLE : Taban sınıflara işaretçi ya da referans kullanan fonksiyonlar türetilen sınıfların nesnelerinide bilmeden kullanabilmelidirler.
+    ISP : INTERFACE SEGREGATION PRINCIPLE : İstemciler kullanmadıkları arayüzlere bağımlı olmaya zorlanmamalıdır.
+    DIP : DEPENDENCY INVERSION PRINCIPLE : Yüksek seviyeli modüller aşağı seviyeli modüllere bağımlı olmamalıdır. İkisi de soyutlamalara bağımlı olmalıdır.
+        Soyutlamalar , detaylara bağımlı olmamalı , detaylar soyutlamalara bağımlı olmalıdır.
+----------------------------------------------------------------------------------------------
+ Single Responsibility Principle
+Paket : Birlikte release edilen yapılar aynı pakette olmalıdır.
+Sınıf : Sınıf sadecebir şeyi soyutlamalı sadece o şeyle ilgili veri ve davranışa sahip olmalıdır.
+Metot : Sınıfın soyutladığı şey ile ilgili , tekrar kullanılabilecek bölünmez tek bir iş yapmalıdır.
+
 
 
 
